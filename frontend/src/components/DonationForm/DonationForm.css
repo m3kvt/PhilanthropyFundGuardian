@@ -1,0 +1,137 @@
+#donorform {
+    display: flex;
+    
+    margin-top:80px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color:#fff;
+  }
+  
+  #donorform .donor-left {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    margin-right: 20px;
+    width: 55%;
+  }
+  
+  #donorform .donor-left img {
+    height: auto;
+    width:55%;
+  }
+  
+  #donorform .donor-right {
+    width:30%;
+    background-color: #00715d;
+    padding:30px;
+    border-radius:10px;
+  }
+  #donorform #address{
+    /* max-width: 280px; */
+  }
+  #donorform .donor-right h2 {
+    margin-bottom: 20px;
+  }
+  
+  #donorform .donor-right form {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #donorform .donor-right label {
+    margin-bottom: 10px;
+  }
+  
+  #donorform .donor-right input,
+  .donor-right textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  #donorform .donor-right button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:90px;
+    align-self: center;
+  }
+  
+  #donorform .donor-right button:hover {
+    background-color: #da190b;
+  }
+  #certificate-container{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #certificate {
+    height:500px;
+    width:60%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:50px;
+    
+    box-shadow: 0px 0px ;
+    /* border: 31px solid #00715d; */
+    /* border:5px solid #00715d; */
+  }
+  
+  #certificate h1 {
+   margin-top: 50px;
+    margin-bottom: 20px;
+    color:#00715d;
+    font-size: 2.5rem;
+  }
+  
+  #certificate p {
+    margin-bottom: 10px;
+    width:60%;
+    font-style: italic;
+    color:#202c2a;
+    font-size: 1.4rem;
+  }
+
+  
+  #certificate h4 {
+    margin-top: 40px;
+  }
+  #certificate div{
+    width:90%;
+  }
+
+  @media screen and (max-width:960px) {
+    #donorform{
+      flex-direction: column;
+      justify-content: space-between;
+      /* background-image: url(/src/assets/donate.png);
+      background-position:right;
+      background-size: 150%;
+      background-repeat: no-repeat;
+       */
+    }
+    #donorform .donor-left {
+      display: none;
+      
+    }
+    #donorform .donor-right {
+      width:60%;
+      background-color: #00715d;
+      padding:30px;
+      border-radius:10px;
+    }
+
+  }

@@ -1,0 +1,60 @@
+#donorlist {
+  /* background-color: #ccc; */
+  height: 80vh;
+  text-align: center;
+}
+#donorlist h2{
+  margin-bottom: 30px;
+}
+#donorlist select{
+  display: block;
+  margin: 15px auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 20%;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0px 0px 9px #ccc;
+}
+#donorlist details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 9px 30%;
+  /* width: 50%; */
+  margin-bottom: 16px;
+  /* overflow: hidden; */
+  background-color: rgb(114, 210, 114);
+  text-align: start;
+}
+
+#donorlist summary {
+  font-weight: bold;
+  margin: 0;
+  cursor: pointer;
+}
+
+#donorlist summary::-webkit-details-marker {
+  display: none;
+}
+
+/* #donorlist .panel {
+    padding: 0 16px;
+    background-color:white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+  } */
+
+#donorlist .active {
+  max-height: 100vh;
+  /* text-align: center; */
+  color:green;
+  background-color: #fff;
+  border-radius: 20px;
+  padding:20px
+}

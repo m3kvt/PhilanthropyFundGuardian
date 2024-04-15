@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  padding: 0 20px;
+  padding-top: 50px;
+  margin-top: 80px;
+  padding-bottom: 30px;
+  /* width:100%; */
+  background-color: #00715d;
+  color: #fff;
+}
+#contact .footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact p {
+  width: 40%;
+}
+#contact .social-icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+#contact .bottom-line {
+  width: 50%;
+  align-self: center;
+  border-top: 1px solid #ccc;
+  margin: 20px 0 2px;
+}
+
+#contact .crafted-with-love {
+  text-align: center;
+  color: #ccc;
+}
+#contact .heart {
+  color: #631741;
+}

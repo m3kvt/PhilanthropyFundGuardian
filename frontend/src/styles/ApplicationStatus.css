@@ -1,0 +1,78 @@
+.check-status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    background-color: green;
+   height:100vh;
+    padding:100px;
+    
+  }
+  
+  .check-status-container h2 {
+    margin-bottom: 30px;
+    color:#ffffff;
+    text-shadow: 0px 0px 15px #000000;
+  }
+  
+  .check-status-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding:100px;
+    background-color: #f3ebeb;
+  }
+  
+  .check-status-container label {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: green;
+  }
+  
+  .check-status-container input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid green;
+    width: 400px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .check-status-container button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .check-status-container button[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  
+  .check-status-container p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .check-status-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color:white;
+    color:  green;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .check-status-container button:hover {
+    background-color: #ccc;
+  }
