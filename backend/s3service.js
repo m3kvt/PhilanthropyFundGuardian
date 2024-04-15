@@ -27,7 +27,7 @@ const uploadcause1FilesToS3 = async (files, appId, s3client) => {
     })
   );
 };
-module.exports = { uploadcause1FilesToS3, s3client };
+// module.exports = { uploadcause1FilesToS3, s3client };
 const uploadcause2FilesToS3 = async (files, appId, s3client) => {
   return Promise.all(
     files.map(async (file) => {
@@ -53,7 +53,7 @@ const uploadcause2FilesToS3 = async (files, appId, s3client) => {
     })
   );
 };
-module.exports = { uploadcause2FilesToS3, s3client };
+module.exports = { uploadcause1FilesToS3, uploadcause2FilesToS3, s3client };
 /*exports.s3Uploadv3 = async (files, causeID, applicationId) => {
   const s3client = new S3Client({ region: process.env.AWS_REGION });
 

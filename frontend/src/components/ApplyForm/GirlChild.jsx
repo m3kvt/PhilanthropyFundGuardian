@@ -48,7 +48,7 @@ const GirlChild = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/submitgirlchild",
+        "http://localhost:3001/api/submitgirlchild",
         formData
       );
       console.log("data:", response.data);

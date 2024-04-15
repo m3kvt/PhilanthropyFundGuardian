@@ -40,7 +40,7 @@ const DisabilityDocuments = () => {
       formData.append("incomeCertificate", incomeCertificate);
 
       const response = await axios.post(
-        `http://localhost:3001/upload-disability/${applicationId}`,
+        `http://localhost:3001/api/upload-disability/${applicationId}`,
         formData,
         {
           headers: {

@@ -28,7 +28,7 @@ const ApplicantList = () => {
     const fetchApplicants = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/girl-child-applicants`
+          `http://localhost:3001/api/girl-child-applicants`
         );
         setApplicants(response.data.data);
         // console.log("applicants:", response.data);
@@ -42,7 +42,7 @@ const ApplicantList = () => {
   const handleAccept = async (applicationId) => {
     console.log("applicationId:", applicationId);
     try {
-      const response = await axios.post(`http://localhost:3001/acceptgirlchild/${applicationId}`);
+      const response = await axios.post(`http://localhost:3001/api/acceptgirlchild/${applicationId}`);
       console.log(response.data.message); // Log the response message from the backend
       
       setApplicantColor((prevColors) => ({
@@ -57,7 +57,7 @@ const ApplicantList = () => {
   const handleReject = async (applicationId) => {
     console.log("applicationId:", applicationId);
     try {
-      const response = await axios.post(`http://localhost:3001/reject/${applicationId}`);
+      const response = await axios.post(`http://localhost:3001/api/reject/${applicationId}`);
       console.log(response.data.message); // Log the response message from the backend
       
       setApplicantColor((prevColors) => ({

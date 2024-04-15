@@ -43,7 +43,7 @@ const Disability = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/submitdisability",
+        "http://localhost:3001/api/submitdisability",
         formData
       );
       console.log("data:", response.data);

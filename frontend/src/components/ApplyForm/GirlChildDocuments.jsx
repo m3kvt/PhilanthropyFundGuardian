@@ -5,6 +5,7 @@ import "./GirlChildDocuments.css"
 import { FaCircle, FaDotCircle, FaStopCircle } from "react-icons/fa";
 const GirlChildDocuments = () => {
     const { applicationId } = useParams();
+    console.log(applicationId)
   const navigate = useNavigate();
 
   const [birthCertificate, setBirthCertificate] = useState(null);
@@ -25,15 +26,15 @@ const GirlChildDocuments = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const formData = new FormData();
       formData.append("birthCertificate", birthCertificate);
       formData.append("educationCertificate", educationCertificate);
       formData.append("incomeCertificate", incomeCertificate);
-
+  
       const response = await axios.post(
-        `http://localhost:3001/uploadgirl/${applicationId}`,
+        `http://localhost:3001/api/uploadgirl/${applicationId}`,
         formData,
         {
           headers: {
@@ -41,7 +42,7 @@ const GirlChildDocuments = () => {
           },
         }
       );
-
+  
       if (response.status === 200) {
         alert("Files uploaded successfully");
         navigate(`/apply/display/${applicationId}`);
@@ -51,6 +52,9 @@ const GirlChildDocuments = () => {
     } catch (error) {
       console.error("Error uploading files:", error);
       alert("Internal server error");
+      if (error.response && error.response.data) {
+        alert(error.response.data.message);
+      }
     }
   };
 

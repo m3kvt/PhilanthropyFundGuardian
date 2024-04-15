@@ -11,7 +11,7 @@ const ApplicationStatus = () => {
       event.preventDefault();
       try {
         const response = await axios.get(
-          `http://localhost:3001/check-status/${applicationId}`
+          `http://localhost:3001/api/check-status/${applicationId}`
         );
         setStatusMessage(response.data.message);
       } catch (error) {

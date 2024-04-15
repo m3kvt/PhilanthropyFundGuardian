@@ -413,7 +413,7 @@ app.get("/check-status/:applicationId", async (req, res) => {
     const status = applicationStatus.status;
     const cleanStatus = status.replace(/\\/g, "");
     // Display the status to the user
-    const message = `Your application is "${cleanStatus}"`;
+    const message = `Your application status is "${cleanStatus}"`;
     return res.status(200).json({ message });
   } catch (error) {
     console.error(error);
@@ -655,6 +655,7 @@ app.post("/acceptdisability/:applicationId", async (req, res) => {
   }
 });
 
+//Display waiting list of girl applicants
 app.get("/waitinggirl", async (req, res) => {
   try {
     // Find application IDs with status "waiting list"

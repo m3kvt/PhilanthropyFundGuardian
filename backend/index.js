@@ -17,7 +17,7 @@ app.use(cors());
 mongoose.connect(
   "mongodb+srv://philafund:philafundsem62024@project-mernstack.xv0zhc5.mongodb.net/philanthropy"
 );
-app.use("/", applications);
+app.use("/api", applications);
 /*app.post("/register", (req, res) => {
   LoginModel.create(req.body)
     .then((LoginUsers) => res.json(LoginUsers))
