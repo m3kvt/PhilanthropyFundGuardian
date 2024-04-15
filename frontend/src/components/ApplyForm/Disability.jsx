@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaCircle } from "react-icons/fa";
 // import { v4 as uuidv4 } from 'uuid';
-
+import "./Disability.css"
 const Disability = () => {
   const [formData, setFormData] = useState({
     fullName: "",

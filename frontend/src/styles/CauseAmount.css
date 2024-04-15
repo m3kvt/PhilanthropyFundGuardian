@@ -1,12 +1,13 @@
 #causeamount {
     background-color:rgb(195, 232, 139) ;
     padding: 50px;
+   
 }
 #causeamount .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height:90vh;
+    height:fit-content;
     align-items: center;
   }
   

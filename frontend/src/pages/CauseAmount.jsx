@@ -13,13 +13,14 @@ const CauseAmount = () => {
   useEffect(() => {
     const fetchSum = async (causeId) => {
       try {
-        const response = await axios.get(`http://localhost:3001/sum-amount/${causeId}`);
+        const response = await axios.get(`http://localhost:3001/api/sum-amount/${causeId}`);
         switch (causeId) {
           case 1:
             setSum1(response.data.sum);
             break;
           case 2:
             setSum2(response.data.sum);
+            console.log(response.data.sum)
             break;
           case 3:
             setSum3(response.data.sum);
@@ -49,7 +50,7 @@ const CauseAmount = () => {
           {sum1 ? (
             <p>Total amount: {sum1}</p>
           ) : (
-            <p>Loading sum amount...</p>
+            <p>Zero balance</p>
           )}
         </div>
         <div className="cause-box">
@@ -58,7 +59,7 @@ const CauseAmount = () => {
           {sum2 ? (
             <p>Total amount: {sum2}</p>
           ) : (
-            <p>Loading sum amount...</p>
+            <p>Zero balance</p>
           )}
         </div>
         <div className="cause-box">
@@ -67,7 +68,7 @@ const CauseAmount = () => {
           {sum3 ? (
             <p>Total amount: {sum3}</p>
           ) : (
-            <p>Loading sum amount...</p>
+            <p>Zero balance</p>
           )}
         </div>
       </div>

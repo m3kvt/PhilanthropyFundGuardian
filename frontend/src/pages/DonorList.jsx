@@ -68,7 +68,7 @@ const DonorList = () => {
       </select>
       <ul>
         {donors.map((donor) => (
-          <div key={donor.id}>
+          <div key={donor._id}>
             <details>
               <summary>{donor.name}</summary>
               <div className="active">
