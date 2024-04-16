@@ -26,6 +26,7 @@ const DonorList = () => {
       navigate("/display/donor/3");
     }
   };
+  console.log("cause.cause",causeId.causeId)
   useEffect(() => {
     const fetchDonors = async () => {
       try {
