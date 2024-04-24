@@ -3,36 +3,36 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaCircle } from "react-icons/fa";
 // import { v4 as uuidv4 } from 'uuid';
-import "./GirlChild.css"
+import "./GirlChild.css";
 const GirlChild = () => {
-    const [formData, setFormData] = useState({
-        fullName: "",
-        dateOfBirth: "",
-        contact: {
-          phoneNumber: "",
-          email: "",
-        },
-        address: "",
-        currentEducation: {
-          institution: "",
-          highestQualification: "",
-        },
-        reasonsForFunds: "",
-        guardianOrParentDetails: {
-          guardianOrParentName: "",
-          relationshipWithApplicant: "",
-          employmentDetails: "",
-        },
-        annualHouseholdIncome: "",
-        bankDetails: "",
-      });
+  const [formData, setFormData] = useState({
+    fullName: "",
+    dateOfBirth: "",
+    contact: {
+      phoneNumber: "",
+      email: "",
+    },
+    address: "",
+    currentEducation: {
+      institution: "",
+      highestQualification: "",
+    },
+    reasonsForFunds: "",
+    guardianOrParentDetails: {
+      guardianOrParentName: "",
+      relationshipWithApplicant: "",
+      employmentDetails: "",
+    },
+    annualHouseholdIncome: "",
+    bankDetails: "",
+  });
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     const parts = name.split(".");
-  
+
     if (parts.length === 2) {
       setFormData((prevState) => ({
         ...prevState,
@@ -69,16 +69,62 @@ const GirlChild = () => {
     e.preventDefault();
   };
   return (
-    
     <div>
-    
-      <h2>Form</h2>
-      <div style={{ display: 'flex',width:"100%" ,justifyContent:"center"}}>
-    <FaCircle color="#ccc" />
-    <span style={{ marginLeft: '10px' }}>
-      <FaCircle />
-    </span>
-  </div>
+      <h2>GIRL CHILD EDUCATION</h2>
+      <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+        <FaCircle />
+        <span style={{ marginLeft: "10px" }}>
+          <FaCircle color="#ccc" />
+        </span>
+      </div>
+      <div>
+        <div>
+        <div>
+          <h3>Eligibility to apply for the scheme</h3>
+          <p>
+            1. Applicant's Gender: The funding is available for girls and young
+            women.
+          </p>
+          <p>
+            2. Age Requirement: Applicants should fall within the specified age
+            of not less than 18 range for educational support .
+          </p>
+          <p>
+            3. Financial Need: Applicants must demonstrate financial need,
+            usually by providing documentation of household income.
+          </p>
+          <p>
+            4. Educational Enrollment: Applicants should be enrolled in an
+            educational institution, such as a school(Primary or secondary) or
+            vocational training program.
+          </p>
+          <h3>Documents to uploaded :</h3>
+          <p>
+            1. Proof of Identity: Scanned copy of government-issued
+            identification -birth certificate , Aadhar Card
+          </p>
+          <p>
+            2. Proof of Residence: Utility bill, rental agreement, or any
+            official document indicating the applicant's current residential
+            address.
+          </p>
+          <p>
+            3. Educational Documentation: Enrollment letter or school records,
+            tuition fee receipts, or any other educational documentation.
+          </p>
+          <p>
+            4. Financial Statement: Recent bank statements, income tax returns,
+            or any other financial documentation to demonstrate the applicant's
+            financial situation.
+          </p>
+          <p>
+            5. Bank Details: Account Holder Name ,Bank Name,Account Number IFSC
+            Code , Branch Name.
+          </p>
+        </div>
+        <img src="/src/assets/girl.png" height="450"/>
+        </div>
+      </div>
       <form onSubmit={handleInput}>
         <div>
           <label>Full Name:</label>
@@ -160,7 +206,8 @@ const GirlChild = () => {
             onChange={handleChange}
             required
           />
-        </div><h4>Guardian or Parent Information</h4>
+        </div>
+        <h4>Guardian or Parent Information</h4>
 
         <div>
           <label>Name:</label>
@@ -177,9 +224,7 @@ const GirlChild = () => {
           <input
             type="text"
             name="guardianOrParentDetails.relationshipWithApplicant"
-            value={
-              formData.guardianOrParentDetails.relationshipWithApplicant
-            }
+            value={formData.guardianOrParentDetails.relationshipWithApplicant}
             onChange={handleChange}
             required
           />

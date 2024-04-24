@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaCircle } from "react-icons/fa";
 // import { v4 as uuidv4 } from 'uuid';
-import "./Disability.css"
+import "./Disability.css";
 const Disability = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -65,12 +65,43 @@ const Disability = () => {
   };
   return (
     <div>
-      <h2>Form</h2>
+      <h2>DISABILITY SUPPORT</h2>
       <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
-        <FaCircle color="#ccc" />
+        <FaCircle />
         <span style={{ marginLeft: "10px" }}>
-          <FaCircle />
+          <FaCircle color="#ccc" />
         </span>
+      </div>
+      <div>
+        <div>
+          <h3>Eligibility to apply for the scheme</h3>
+          <p>
+            1. Applicant's Disability: The funding is available for individuals with disabilities.
+          </p>
+          <p>
+            2. Financial Need: Applicants must demonstrate financial need, usually by providing documentation of household income.
+          </p>
+          <p>
+            3. Medical Diagnosis: Applicants should provide medical documentation verifying their disability and need for support.
+          </p>
+          <p>
+            4. Description of Need: Applicants should provide a detailed description of the specific disability-related need for which funding is being requested.
+          </p>
+          <h3>Documents to uploaded :</h3>
+          <p>
+            1. Proof of Identity: Scanned copy of government-issued identification-birth certificate , Aadhar Card .
+          </p>
+          <p>
+            2. Proof of Residence: Utility bill, rental agreement, or any official document indicating the applicant's current residential address.
+          </p>
+          <p>
+            3. Medical Documentation: Medical reports, disability certificates, or letters from healthcare professionals.
+          </p>
+          <p>
+            4. Financial Statement: Recent bank statements, income tax returns, or any other financial documentation to demonstrate the applicant's financial situation.
+          </p>
+        </div>
+        <img src="/src/assets/disability.png" alt="disable" height="450" />
       </div>
       <form onSubmit={handleInput}>
         <div>
