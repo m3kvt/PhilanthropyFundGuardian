@@ -1,0 +1,25 @@
+#adminlogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-image: url("/imgfund.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+#adminlogin .Submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    color: #fff;
+    background: #00715d;
+    border-radius: 40px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+  }

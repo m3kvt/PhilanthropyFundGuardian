@@ -41,7 +41,7 @@ const AdminLogin = () => {
   };
   return (
     <div id="adminlogin">
-      <div>ADMIN</div>
+      <div className="header">ADMIN</div>
       <br />
       <form onSubmit={handleSubmit}>
         <input
@@ -63,9 +63,11 @@ const AdminLogin = () => {
         />
         <br />
         <br />
+        <div className="Submit">
         <button type="submit" onClick={handleAdminLogin}>
           Login
         </button>
+        </div>
       </form>
     </div>
   );
