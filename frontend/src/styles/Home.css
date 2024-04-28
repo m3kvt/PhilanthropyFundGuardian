@@ -9,6 +9,7 @@ body{
   align-items: center;
   height: 100%;
   padding: 0 2rem;
+  box-shadow: 0px 10px 30px #000;
 }
 
 #home .text-container {
@@ -27,7 +28,7 @@ body{
   font-size: 5rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.9);
 }
 
 #home .text-container p {
@@ -35,6 +36,7 @@ body{
   color: white;
   /* opacity: 0.8; */
   margin-left:90px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
   
 }
 

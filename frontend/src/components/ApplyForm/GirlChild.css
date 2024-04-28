@@ -5,12 +5,13 @@
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 70px;
+    
   }
   
   #girlchild .progress {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   
   #girlchild .progress span {
@@ -20,26 +21,38 @@
   #girlchild .content {
     display: flex;
     flex-direction: row;
-    height: fit-content;
+    /* height: fit-content; */
+    justify-content: space-around;
+    /* margin:30px; */
     padding: 10px;
+     
   }
   
   #girlchild .details {
-    flex: 1;
-    height: fit-content;
-    padding: 10px;
+    /* flex: 1; */
+    /* height: fit-content; */
+    padding: 45px;
+    border:9px solid #00715d;
+    margin-right: 70px;
+    width: 50%;
+    color:#0a231e;
   }
   
   #girlchild  .image {
-    flex: 1;
+    /* flex: 1; */
     padding: 10px;
+    /* height: 30%; */
   }
   
   #girlchild .image img {
-    width: 350px;
-    height: 60%;
+    width: 300px;
+    
   }
-
+  #girlchild h2{
+    color: #00715d;
+    font-size: 2rem;
+    font-weight: 900;
+  }
   #girlchild .form{
     background-color: rgb(255, 255, 255);
     padding:20px;
@@ -70,4 +83,16 @@
     width: 80px;
     height: 30px;
     cursor: pointer;
+  }
+  @media screen and (max-width:768px){
+    #girlchild .details {
+      width: 60%;
+      margin:0;
+      padding:5px;
+      border:5px solid #00715d;
+    }
+    #girlchild .image img {
+      width: 250px;
+      
+    }
   }

@@ -21,6 +21,7 @@ import ApplicationStatus from "./pages/ApplicationStatus";
 import CauseAmount from "./pages/CauseAmount";
 import Disability from "./components/ApplyForm/Disability";
 import DisabilityDocuments from "./components/ApplyForm/DisabilityDocuments";
+import WaitingList from "./pages/WaitingList";
 
 const App = () => {
   return (
@@ -47,6 +48,8 @@ const App = () => {
         <Route path="/display/apply/:causeId" element={<ApplicantList/>}></Route>
         <Route path="/display/cause/:causeId" element={<CauseAmount/>}></Route>
         <Route path="/applicationstatus" element={<ApplicationStatus/>}></Route>
+        <Route path="/display/waiting/:causeId" element={<WaitingList/>}></Route>
+
       </Routes>
       
     </Router>

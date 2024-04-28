@@ -87,9 +87,10 @@ const Navbar = () => {
         <div className="nav-btn">
           {userName ? (
             <div className="nav-btn-link">
-            <Link to={`/profile/${userName}`} style={{color:"#fff", textDecoration: 'none'}} >
+            {/* <Link to={`/profile/${userName}`} style={{color:"#fff", textDecoration: 'none'}} >
               {userName}
-            </Link>
+            </Link> */}
+            {userName}
             <FaAngleDown onClick={() => setShowLogout(!showLogout)}/>
             {showLogout && (
                 <div className="dropdown-menu">

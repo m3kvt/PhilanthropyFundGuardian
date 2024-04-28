@@ -63,9 +63,9 @@ const DonorList = () => {
       <label textAlign="center">Select the cause:</label>
       <select id="dropdown" onChange={handleSelectChange}>
         <option value="option1">select</option>
-        <option value="option2">Cause 1</option>
-        <option value="option3">Cause 2</option>
-        <option value="option4">Cause 3</option>
+        <option value="option2">Girl Child Education</option>
+        <option value="option3">Disability Support</option>
+        <option value="option4">Old Age Funds</option>
       </select>
       <ul>
         {donors.map((donor) => (

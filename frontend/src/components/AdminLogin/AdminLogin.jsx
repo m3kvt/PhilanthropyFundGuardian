@@ -41,6 +41,7 @@ const AdminLogin = () => {
   };
   return (
     <div id="adminlogin">
+      <div className="formbox">
       <div className="header">ADMIN</div>
       <br />
       <form onSubmit={handleSubmit}>
@@ -69,6 +70,7 @@ const AdminLogin = () => {
         </button>
         </div>
       </form>
+      </div>
     </div>
   );
 };

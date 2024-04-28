@@ -53,7 +53,7 @@ const Login = () => {
         localStorage.setItem("userData", JSON.stringify(userData));
       console.log("userData: ", userData);
         localStorage.setItem("name",name );
-        navigate(`/profile/${name}`);
+        navigate(`/${name}`);
       } else {
         alert("Invalid Email or Password");
       }

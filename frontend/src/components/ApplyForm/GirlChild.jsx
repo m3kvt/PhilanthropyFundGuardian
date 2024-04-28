@@ -78,9 +78,10 @@ const GirlChild = () => {
           <FaCircle color="#ccc" />
         </span>
       </div>
+      <br/>
       <div className="content">
         <div className="details">
-          <h3>Eligibility to apply for the scheme</h3>
+          <h3>Eligibility to apply for the scheme</h3><br/>
           <p>
             1. Applicant's Gender: The funding is available for girls and young
             women.
@@ -97,8 +98,8 @@ const GirlChild = () => {
             4. Educational Enrollment: Applicants should be enrolled in an
             educational institution, such as a school(Primary or secondary) or
             vocational training program.
-          </p>
-          <h3>Documents to uploaded :</h3>
+          </p><br/><br/>
+          <h3>Documents to uploaded :</h3><br/>
           <p>
             1. Proof of Identity: Scanned copy of government-issued
             identification -birth certificate , Aadhar Card
@@ -126,6 +127,7 @@ const GirlChild = () => {
         <img src="/src/assets/girl.png"/>
         </div>
       </div>
+      <br/>
       <form className="form" onSubmit={handleInput}>
         <div className="formdetails">
           <label>Full Name:</label>

@@ -108,6 +108,15 @@
     color: #fff;
   }
 }
+.dropdown-menu{
+  background-color: #548d6f;
+  border-radius: 20px;
+  /* padding:2px; */
+  text-align: center;
+  &:hover{
+    background-color: #783425;
+  }
+}
 @media screen and (max-width: 960px) {
   .navbar {
     transition: 0.8s all ease;

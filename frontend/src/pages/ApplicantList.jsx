@@ -36,6 +36,9 @@ const ApplicantList = () => {
             "http://localhost:3001/api/girl-child-applicants"
           );
           console.log("response girl:", response.data.data);
+          if (response.data.data.length===0){
+            alert("No applicants for this category yet.")
+          }
           setApplicants(response.data.data);
         }
         if (selectedCause === 2) {
@@ -43,6 +46,9 @@ const ApplicantList = () => {
             "http://localhost:3001/api/disability-applicants"
           );
           console.log("response disability:", response.data.data);
+          if (response.data.data.length===0){
+            alert("No applicants for this category yet.")
+          }
           setApplicants(response.data.data);
         }
       } catch (error) {
@@ -113,13 +119,14 @@ const ApplicantList = () => {
         </Link>
         Applicant List
       </h2>
+      Approve waiting list before checking new applications: <Link to={`/display/waiting/$causeId`} > click here</Link><br/>
       <label htmlFor="dropdown" className="dropdown-label">
         Select the cause:
       </label>
       <select id="dropdown" className="dropdown" onChange={handleSelectChange}>
         <option value="option1">select</option>
-        <option value="option2">Cause 1</option>
-        <option value="option3">Cause 2</option>
+        <option value="option2">Girl Child Education</option>
+        <option value="option3">Disability Support</option>
       </select>
 
       {selectedCause === 1 && (
