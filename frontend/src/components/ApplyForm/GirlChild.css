@@ -1,0 +1,73 @@
+#girlchild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #girlchild .progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #girlchild .progress span {
+    margin-left: 10px;
+  }
+  
+  #girlchild .content {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 10px;
+  }
+  
+  #girlchild .details {
+    flex: 1;
+    height: fit-content;
+    padding: 10px;
+  }
+  
+  #girlchild  .image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  #girlchild .image img {
+    width: 350px;
+    height: 60%;
+  }
+
+  #girlchild .form{
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    width: 50%;
+    box-shadow: 0px 0px 4px #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    opacity: 1;
+}
+#girlchild .formdetails{
+    display: flex;
+    flex-direction: column;
+}
+#girlchild .input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+#girlchild .Submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#girlchild .button{
+    color: #fff;
+    background: #00715d;
+    border-radius: 40px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+  }

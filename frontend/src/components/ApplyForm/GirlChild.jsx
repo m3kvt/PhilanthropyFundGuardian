@@ -69,17 +69,17 @@ const GirlChild = () => {
     e.preventDefault();
   };
   return (
-    <div>
+    <div id="girlchild">
       <h2>GIRL CHILD EDUCATION</h2>
-      <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+      <br />
+      <div className="progress">
         <FaCircle />
-        <span style={{ marginLeft: "10px" }}>
+        <span>
           <FaCircle color="#ccc" />
         </span>
       </div>
-      <div>
-        <div>
-        <div>
+      <div className="content">
+        <div className="details">
           <h3>Eligibility to apply for the scheme</h3>
           <p>
             1. Applicant's Gender: The funding is available for girls and young
@@ -118,15 +118,16 @@ const GirlChild = () => {
             financial situation.
           </p>
           <p>
-            5. Bank Details: Account Holder Name ,Bank Name,Account Number IFSC
-            Code , Branch Name.
+            5. Bank Details: Account Holder Name, Bank Name, Account Number IFSC
+            Code, Branch Name.
           </p>
         </div>
-        <img src="/src/assets/girl.png" height="450"/>
+        <div className="image">
+        <img src="/src/assets/girl.png"/>
         </div>
       </div>
-      <form onSubmit={handleInput}>
-        <div>
+      <form className="form" onSubmit={handleInput}>
+        <div className="formdetails">
           <label>Full Name:</label>
           <input
             type="text"
@@ -136,7 +137,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Date of Birth:</label>
           <input
             type="date"
@@ -146,8 +147,9 @@ const GirlChild = () => {
             required
           />
         </div>
+        <br />
         <h4>Contact</h4>
-        <div>
+        <div className="formdetails">
           <label>Phone Number:</label>
           <input
             type="tel"
@@ -157,7 +159,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label> Email:</label>
           <input
             type="email"
@@ -167,7 +169,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Address:</label>
           <input
             type="text"
@@ -177,8 +179,9 @@ const GirlChild = () => {
             required
           />
         </div>
+        <br />
         <h4>Education</h4>
-        <div>
+        <div className="formdetails">
           <label>Institution:</label>
           <input
             type="text"
@@ -188,7 +191,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Highest Qualification:</label>
           <input
             type="text"
@@ -198,7 +201,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Reasons for Funds:</label>
           <textarea
             name="reasonsForFunds"
@@ -207,9 +210,10 @@ const GirlChild = () => {
             required
           />
         </div>
+        <br />
         <h4>Guardian or Parent Information</h4>
 
-        <div>
+        <div className="formdetails">
           <label>Name:</label>
           <input
             type="text"
@@ -219,7 +223,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Relationship with Applicant:</label>
           <input
             type="text"
@@ -229,7 +233,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Employment Details:</label>
           <input
             type="text"
@@ -239,7 +243,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Annual Household Income:</label>
           <input
             type="number"
@@ -249,7 +253,7 @@ const GirlChild = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Bank Details:</label>
           <input
             type="text"
@@ -259,8 +263,13 @@ const GirlChild = () => {
             required
           />
         </div>
+        <br />
+        <div className="Submit">
         <button type="submit">Next</button>
+        </div>
       </form>
+      <br />
+      <br />
     </div>
   );
 };
