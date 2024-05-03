@@ -64,16 +64,16 @@ const Disability = () => {
     e.preventDefault();
   };
   return (
-    <div>
+    <div id ="disabilitysupport"> 
       <h2>DISABILITY SUPPORT</h2>
-      <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+      <div className="progress" style={{ display: "flex", width: "100%", justifyContent: "center" }}>
         <FaCircle />
         <span style={{ marginLeft: "10px" }}>
           <FaCircle color="#ccc" />
         </span>
       </div>
-      <div>
-        <div>
+      <div className="Content">
+        <div className="Eligibility">
           <h3>Eligibility to apply for the scheme</h3>
           <p>
             1. Applicant's Disability: The funding is available for individuals with disabilities.
@@ -101,14 +101,20 @@ const Disability = () => {
             4. Financial Statement: Recent bank statements, income tax returns, or any other financial documentation to demonstrate the applicant's financial situation.
           </p>
         </div>
-        <img src="/src/assets/disability.png" alt="disable" height="450" />
+        <div className="image">
+        <img src="/src/assets/disability.png"  />
+        </div>
       </div>
-      <form onSubmit={handleInput}>
-        <div>
+      <br/>
+      <br/>
+      <hr/>
+      <form className="form" onSubmit={handleInput}>
+        <div className="formdetails">
           <label>Application ID:</label>
         </div>
-        <div>
+        <div className="formdetails">
           <label>Full Name:</label>
+          <br></br>
           <input
             type="text"
             name="fullName"
@@ -117,8 +123,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Date of Birth:</label>
+          <br></br>
           <input
             type="date"
             name="dateOfBirth"
@@ -127,9 +134,12 @@ const Disability = () => {
             required
           />
         </div>
-        <h4>Contact</h4>
-        <div>
+        <br></br>
+        <h3>Contact</h3>
+       
+        <div className="formdetails">
           <label>Phone Number:</label>
+          <br></br>
           <input
             type="tel"
             name="contact.phoneNumber"
@@ -138,8 +148,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label> Email:</label>
+          <br></br>
           <input
             type="email"
             name="contact.email"
@@ -148,8 +159,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Address:</label>
+          <br></br>
           <input
             type="text"
             name="address"
@@ -158,8 +170,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Type of Disability:</label>
+          <br></br>
           <input
             type="text"
             name="typeOfDisability"
@@ -168,8 +181,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Severity of Disability:</label>
+          <br></br>
           <input
             type="text"
             name="severityOfDisability"
@@ -178,8 +192,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Mobility Aids:</label>
+          <br></br>
           <input
             type="text"
             name="mobilityAids"
@@ -190,6 +205,7 @@ const Disability = () => {
         </div>
         <div>
           <label>Daily Assistance:</label>
+          <br></br>
           <input
             type="text"
             name="dailyAssistance"
@@ -198,8 +214,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Employment Status:</label>
+          <br></br>
           <input
             type="text"
             name="employmentStatus"
@@ -208,8 +225,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails">
           <label>Annual Income:</label>
+          <br></br>
           <input
             type="number"
             name="annualIncome"
@@ -217,9 +235,10 @@ const Disability = () => {
             onChange={handleChange}
             required
           />
-        </div>
-        <div>
+        </div >
+        <div className="formdetails">
           <label>Support Needed:</label>
+          <br></br>
           <input
             type="text"
             name="supportNeeded"
@@ -228,8 +247,9 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <div className="formdetails"> 
           <label>Bank Details:</label>
+          <br></br>
           <input
             type="text"
             name="bankDetails"
@@ -238,7 +258,8 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <br/>
+        <div className="button">
           <button type="submit">Submit</button>
         </div>
       </form>

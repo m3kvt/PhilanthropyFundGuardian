@@ -1,0 +1,115 @@
+#disabilitysupport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+ /* margin-top: 70px;*/
+
+  background-color: #ffffff; /* Light grey background for the whole page */
+  font-family: 'Arial',sans-serif;
+}
+
+#disabilitysupport .progress {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Add some space below the progress bar */
+}
+  
+#disabilitysupport .progress span {
+  margin-left: 10px;
+}
+
+#disabilitysupport .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20spx;
+  background-color: #ffffff; /* White background for the content */
+  border-radius: 20px; /* Rounded corners for the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the content */
+}
+
+#disabilitysupport .Eligibility {
+  padding: 45px;
+  border: 9px solid #00715D;
+  margin-right: 70px;
+  width: 50%;
+  color: #0a231e;
+}
+
+#disabilitysupport .image {
+  padding: 20px;
+}
+
+#disabilitysupport .image img {
+  width: 300px;
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+#disabilitysupport h2{
+  color: #00715d;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center; /* Center the title */
+}
+
+#disabilitysupport .Content {
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#disabilitysupport .form{
+  background-color: #aecfc7;
+  padding:20px;
+  width: 50%;
+  box-shadow: 0px 0px 6px #000000;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  
+}
+
+#disabilitysupport .formdetails{
+  display: flex;
+  flex-direction: column;
+}
+
+#disabilitysupport .input{
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#disabilitysupport .button{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+#disabilitysupport button{
+  color: #fff;
+  background: #00715D;
+  border-radius: 100px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#disabilitysupport button:hover {
+  background-color: #00593c; /* Darker green for button hover */
+}
+
+@media screen and (max-width:768px){
+  #disabilitysupport .details {
+    width: 90%;
+    margin:0;
+    padding:5px;
+    border:5px solid #ffffff;
+  }
+  #disabilitysupports .image img {
+    width: 100px;
+  }
+}
