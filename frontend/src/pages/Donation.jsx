@@ -50,36 +50,38 @@ const Donation = () => {
       <h1>Make a Contribution</h1>
       <div className="apply-container">
         <div className="apply-box">
-          <img src={image1} alt="Image 1" />
-          <p>Some text describing Box 1</p>
+          <img src={image1} alt="Image 1" /><h2>Girl Child Education</h2>
+          <p> We believe that every girl deserves access to quality education. </p>
           {name? (
             <Link to={`/donate/${name}/1`} className="apply-btn">
               Donate
             </Link>
           ) : (
-            <p>Please login to donate</p>
+            <h4>Please login to donate</h4>
           )}
         </div>
         <div className="apply-box">
           <img src={image2} alt="Image 2" height="150px" />
-          <p>Some text describing Box 2</p>
+          <h2>Disability Support</h2>
+          <p>We are committed to empowering individuals with disabilities to lead fulfilling and independent lives.</p>
           {name? (
             <Link to={`/donate/${name}/2`} className="apply-btn">
               Donate
             </Link>
           ) : (
-            <p>Please login to donate</p>
+            <h4>Please login to donate</h4>
           )}
         </div>
         <div className="apply-box">
           <img src={image3} alt="Image 3" className="image3" height="150px" />
-          <p>Some text describing Box 3</p>
+          <h2>Old Age</h2>
+          <p>We offer compassionate care and support, ensuring seniors live with dignity and comfort in our old age homes.</p>
           {name? (
             <Link to={`/donate/${name}/3`} className="apply-btn">
               Donate
             </Link>
           ) : (
-            <p>Please login to donate</p>
+            <h4>Please login to donate</h4>
           )}
         </div>
       </div>

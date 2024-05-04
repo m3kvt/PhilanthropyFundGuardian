@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FaCircle } from "react-icons/fa";
 // import { v4 as uuidv4 } from 'uuid';
 import "./GirlChild.css";
+import Navbar from "../Navbar/Navbar";
 const GirlChild = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -70,6 +71,7 @@ const GirlChild = () => {
   };
   return (
     <div id="girlchild">
+    <Navbar/>
       <h2>GIRL CHILD EDUCATION</h2>
       <br />
       <div className="progress">

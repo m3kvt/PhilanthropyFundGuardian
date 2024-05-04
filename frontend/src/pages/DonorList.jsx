@@ -56,7 +56,7 @@ const DonorList = () => {
     <div id="donorlist" classname="donorlist">
       <h2>
         <Link to={`/admin/${username}`}>
-          <FaArrowCircleLeft color="#000" />
+          <FaArrowCircleLeft  className="arrow"/>
         </Link>
         Donor List
       </h2>

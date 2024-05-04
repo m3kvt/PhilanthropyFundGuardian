@@ -70,7 +70,7 @@ const DisabilityDocuments = () => {
     </span>
   </div>
   <h2 style={{textAlign:"center"}}>Upload Necessary Certificates</h2><br/>
-  <form onSubmit={handleSubmit} id="form-container">
+  <form onSubmit={handleSubmit} id="form-container" style={{textAlign:"center"}}>
     <label>
       Proof of Identity (ID Proof):
       <input

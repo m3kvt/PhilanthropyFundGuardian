@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="footer-content">
         <div className="left-side">
           <h3>Aidify</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut consequat est. </p>
+          <p>1456 Park Avenue New Delhi, Delhi 110001<br/>India</p>
         </div>
         <div className="right-side">
           <h4>Connect with us</h4>
@@ -23,6 +23,7 @@ const Contact = () => {
       <div className="bottom-line"></div>
       <div className="crafted-with-love">
         <h5>Crafted with <FaHeart className="heart"/></h5>
+        <h6>©Aidify 2024</h6>
       </div>
     </footer>
   );

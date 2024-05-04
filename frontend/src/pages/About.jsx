@@ -54,20 +54,22 @@ const About = () => {
           </div>
         </div>
         <div className="quote-section">
-          <h1 className="title" >
-            <span className="line"></span>The meaning of life is to find your gift. The purpose of life is to give it away.
+          <h1 className="title">
+            <span className="line"></span>"Every act of kindness is a beacon of
+            hope, lighting up the lives of those in need."
             <span className="line"></span>
           </h1>
-          <p style={{paddingLeft:"50px",color:"#00725E"}}>Testimonial</p>
-          <h2 style={{paddingLeft:"50px"}}>What People Say About Us</h2>
+          <p style={{ paddingLeft: "50px", color: "#00725E" }}>Testimonial</p>
+          <h2 style={{ paddingLeft: "50px" }}>What People Say About Us</h2>
           <div className="boxes">
             <div className="box">
-              <FaQuoteLeft color="#00725E"/>
-              <h3>Kindness</h3>
+              <FaQuoteLeft color="#00725E" />
+              <h3>Generosity and Compassion</h3>
               <p className="boxpara">
-                Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy
-                text Lorem Ipsum is simply dummy text Lorem Ipsum is simply
-                dummy text Lorem Ipsum is{" "}
+                "As a beneficiary of the programs supported by this trust, I
+                can't express enough gratitude for their generosity and
+                compassion. They provide crucial assistance to individuals and
+                families during difficult times."{" "}
               </p>
               <div class="profile">
                 <img
@@ -77,18 +79,19 @@ const About = () => {
                   width="50px"
                 />
                 <div class="profile-info">
-                  <p class="name">John Doe</p>
-                  <p class="designation">Software Engineer</p>
+                  <p class="name">Alex Carterc</p>
+                  <p class="designation">Program Participant</p>
                 </div>
               </div>
             </div>
             <div className="box">
-              <FaQuoteLeft color="#00725E"/>
-              <h3>Morality</h3>
+              <FaQuoteLeft color="#00725E" />
+              <h3>Trust</h3>
               <p className="boxpara">
-                Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy
-                text Lorem Ipsum is simply dummy text Lorem Ipsum is simply
-                dummy text Lorem Ipsum is{" "}
+                "This trust goes above and beyond to ensure that every dollar
+                donated is used effectively and efficiently. Their commitment to
+                accountability and their track record of success make them a
+                trusted partner in philanthropy."{" "}
               </p>
               <div class="profile">
                 <img
@@ -99,17 +102,18 @@ const About = () => {
                 />
                 <div class="profile-info">
                   <p class="name">Jack Harry</p>
-                  <p class="designation">Senior Gardener Farmer</p>
+                  <p class="designation">supporter </p>
                 </div>
               </div>
             </div>
             <div className="box">
-              <FaQuoteLeft color="#00725E"/>
-              <h3>Ethics & Morality</h3>
+              <FaQuoteLeft color="#00725E" />
+              <h3>Community</h3>
               <p className="boxpara">
-                Lorem Ipsum is simply dummy text Lorem Ipsum is simply dummy
-                text Lorem Ipsum is simply dummy text Lorem Ipsum is simply
-                dummy text Lorem Ipsum is{" "}
+                "I wholeheartedly endorse this charitable trust. Their tireless
+                efforts to address pressing social issues and their
+                collaborative approach to problem-solving make them an
+                invaluable asset to our community."{" "}
               </p>
               <div class="profile">
                 <img
@@ -120,7 +124,7 @@ const About = () => {
                 />
                 <div class="profile-info">
                   <p class="name">Sakib Hossain</p>
-                  <p class="designation">Senior Gardener Farmer</p>
+                  <p class="designation">Community Leader</p>
                 </div>
               </div>
             </div>

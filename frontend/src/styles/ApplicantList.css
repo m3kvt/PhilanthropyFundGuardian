@@ -1,9 +1,11 @@
 #applicantlist {
-    max-width: 800px;
-    margin: 20px auto;
+    /* max-width: 800px; */
+    padding: 50px;
     font-family: Arial, sans-serif;
     text-align: center;
-    
+    background-color: #d6f3d7;
+    height:200vh;
+
   }
   
   #applicantlist h2 {
@@ -19,7 +21,7 @@
   
   #applicantlist label {
     display: block;
-    margin-bottom: 5px;
+    margin: 20px 0px;
     text-align: center;
   }
   
@@ -51,6 +53,7 @@
     padding: 10px;
     box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.4);
     text-align: start;
+    background-color: #fff;
   }
   
   #applicantlist details summary {
@@ -59,6 +62,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     cursor: pointer;
+    
   }
   
   #applicantlist details summary p {

@@ -70,6 +70,7 @@ const ApplicantList = () => {
         ...prevColors,
         [applicationId]: "green",
       }));
+      alert(response.data.message)
     } catch (error) {
       console.error("Error accepting girl application:", error);
       // Handle error, show error message, etc.
@@ -88,6 +89,7 @@ const ApplicantList = () => {
         ...prevColors,
         [applicationId]: "green",
       }));
+      alert(response.data.message)
     } catch (error) {
       console.error("Error accepting disability application:", error);
       // Handle error, show error message, etc.
@@ -106,6 +108,7 @@ const ApplicantList = () => {
         ...prevColors,
         [applicationId]: "red",
       }));
+      alert(response.data.message)
     } catch (error) {
       console.error("Error rejecting application:", error);
       // Handle error, show error message, etc.

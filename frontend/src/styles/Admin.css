@@ -29,4 +29,8 @@
   width:12%;
   height:5%;
   box-shadow: 0px 0px 15px #787171;
+  cursor: pointer;
+  &:hover{
+    background-color: #ccc;
+  }
 }

@@ -15,15 +15,7 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  // const handleSearchChange = (event) => {
-  //   setSearchQuery(event.target.value);
-  // };
-
-  // const handleSearchSubmit = (event) => {
-  //   event.preventDefault();
-  //   // Handle search functionality here, for example, redirect to search results page
-  //   console.log("Search query:", searchQuery);
-  // };
+ 
   const handleLogout = () => {
     localStorage.removeItem("name");
     setUserName(null);
@@ -70,26 +62,11 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        {/* <div className="searchbox">
-          <form onSubmit={handleSearchSubmit} className="search-form">
-            <input
-              type="text"
-              placeholder="  search..."
-              className="search-bar"
-              value={searchQuery}
-              onChange={handleSearchChange}
-            />
-            <button type="submit" className="search-btn">
-              <FaSearch />
-            </button>
-          </form>
-        </div> */}
+        
         <div className="nav-btn">
           {userName ? (
             <div className="nav-btn-link">
-            {/* <Link to={`/profile/${userName}`} style={{color:"#fff", textDecoration: 'none'}} >
-              {userName}
-            </Link> */}
+            
             {userName}
             <FaAngleDown onClick={() => setShowLogout(!showLogout)}/>
             {showLogout && (
@@ -119,51 +96,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// import React from 'react'
-// import {Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements'
-// import {FaBars} from 'react-icons/fa'
-// import logo from "/src/assets/logo.png"
-
-// const Navbar = () => {
-
-//   return (
-//     <>
-//         <Nav>
-//             <NavbarContainer>
-//                 <NavLogo to='/'>
-//                 <img src={logo} alt="Logo" width='90px'/>
-
-//                 </NavLogo>
-//                 <MobileIcon>
-//                     <FaBars/>
-//                 </MobileIcon>
-//                 <NavMenu>
-//                     <NavItem>
-//                         <NavLinks to='home' >Home</NavLinks>
-//                     </NavItem>
-//                     <NavItem>
-//                         <NavLinks to='about' >About</NavLinks>
-//                     </NavItem>
-//                     <NavItem>
-//                         <NavLinks to='contact' >Contact Us</NavLinks>
-//                     </NavItem>
-//                     <NavItem>
-//                         <NavLinks to='about'>About Us</NavLinks>
-//                     </NavItem>
-
-//                 </NavMenu>
-//                 <NavBtn>
-//                     <NavBtnLink to='signin'>Sign In</NavBtnLink>
-//                     <NavBtnLink to='signin'>Admin</NavBtnLink>
-//                 </NavBtn>
-//                 {/* <NavBtn>
-
-//                 </NavBtn> */}
-//             </NavbarContainer>
-//         </Nav>
-//     </>
-//   )
-// }
-
-// export default Navbar

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { FaCircle } from "react-icons/fa";
 // import { v4 as uuidv4 } from 'uuid';
 import "./Disability.css";
+import Navbar from "../Navbar/Navbar";
 const Disability = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -64,9 +65,13 @@ const Disability = () => {
     e.preventDefault();
   };
   return (
-    <div id ="disabilitysupport"> 
+    <div id="disabilitysupport">
+      <Navbar />
       <h2>DISABILITY SUPPORT</h2>
-      <div className="progress" style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+      <div
+        className="progress"
+        style={{ display: "flex", width: "100%", justifyContent: "center" }}
+      >
         <FaCircle />
         <span style={{ marginLeft: "10px" }}>
           <FaCircle color="#ccc" />
@@ -75,46 +80,57 @@ const Disability = () => {
       <div className="Content">
         <div className="Eligibility">
           <h3>Eligibility to apply for the scheme</h3>
+          <br />
           <p>
-            1. Applicant's Disability: The funding is available for individuals with disabilities.
+            1. Applicant's Disability: The funding is available for individuals
+            with disabilities.
           </p>
           <p>
-            2. Financial Need: Applicants must demonstrate financial need, usually by providing documentation of household income.
+            2. Financial Need: Applicants must demonstrate financial need,
+            usually by providing documentation of household income.
           </p>
           <p>
-            3. Medical Diagnosis: Applicants should provide medical documentation verifying their disability and need for support.
+            3. Medical Diagnosis: Applicants should provide medical
+            documentation verifying their disability and need for support.
           </p>
           <p>
-            4. Description of Need: Applicants should provide a detailed description of the specific disability-related need for which funding is being requested.
+            4. Description of Need: Applicants should provide a detailed
+            description of the specific disability-related need for which
+            funding is being requested.
           </p>
+          <br />
           <h3>Documents to uploaded :</h3>
+          <br />
           <p>
-            1. Proof of Identity: Scanned copy of government-issued identification-birth certificate , Aadhar Card .
+            1. Proof of Identity: Scanned copy of government-issued
+            identification-birth certificate , Aadhar Card .
           </p>
           <p>
-            2. Proof of Residence: Utility bill, rental agreement, or any official document indicating the applicant's current residential address.
+            2. Proof of Residence: Utility bill, rental agreement, or any
+            official document indicating the applicant's current residential
+            address.
           </p>
           <p>
-            3. Medical Documentation: Medical reports, disability certificates, or letters from healthcare professionals.
+            3. Medical Documentation: Medical reports, disability certificates,
+            or letters from healthcare professionals.
           </p>
           <p>
-            4. Financial Statement: Recent bank statements, income tax returns, or any other financial documentation to demonstrate the applicant's financial situation.
+            4. Financial Statement: Recent bank statements, income tax returns,
+            or any other financial documentation to demonstrate the applicant's
+            financial situation.
           </p>
         </div>
         <div className="image">
-        <img src="/src/assets/disability.png"  />
+          <img src="/src/assets/disability.png" />
         </div>
       </div>
-      <br/>
-      <br/>
-      <hr/>
+      <br />
+      <br />
+      <hr />
       <form className="form" onSubmit={handleInput}>
         <div className="formdetails">
-          <label>Application ID:</label>
-        </div>
-        <div className="formdetails">
           <label>Full Name:</label>
-          <br></br>
+
           <input
             type="text"
             name="fullName"
@@ -123,9 +139,10 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label>Date of Birth:</label>
-          <br></br>
+
           <input
             type="date"
             name="dateOfBirth"
@@ -134,12 +151,12 @@ const Disability = () => {
             required
           />
         </div>
-        <br></br>
+        <br />
         <h3>Contact</h3>
-       
+
         <div className="formdetails">
           <label>Phone Number:</label>
-          <br></br>
+
           <input
             type="tel"
             name="contact.phoneNumber"
@@ -148,9 +165,9 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label> Email:</label>
-          <br></br>
           <input
             type="email"
             name="contact.email"
@@ -159,9 +176,9 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label>Address:</label>
-          <br></br>
           <input
             type="text"
             name="address"
@@ -170,9 +187,10 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label>Type of Disability:</label>
-          <br></br>
+
           <input
             type="text"
             name="typeOfDisability"
@@ -181,20 +199,49 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label>Severity of Disability:</label>
-          <br></br>
-          <input
-            type="text"
-            name="severityOfDisability"
-            value={formData.severityOfDisability}
-            onChange={handleChange}
-            required
-          />
+          <div className="radio-group">
+            <div>
+              <input
+                type="radio"
+                name="severityOfDisability"
+                value="high"
+                checked={formData.severityOfDisability === "high"}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="high">High</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="severityOfDisability"
+                value="moderate"
+                checked={formData.severityOfDisability === "moderate"}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="moderate">Moderate</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="severityOfDisability"
+                value="low"
+                checked={formData.severityOfDisability === "low"}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="low">Low</label>
+            </div>
+          </div>
         </div>
+        <br />
         <div className="formdetails">
           <label>Mobility Aids:</label>
-          <br></br>
+
           <input
             type="text"
             name="mobilityAids"
@@ -203,9 +250,10 @@ const Disability = () => {
             required
           />
         </div>
-        <div>
+        <br />
+        <div className="formdetails">
           <label>Daily Assistance:</label>
-          <br></br>
+
           <input
             type="text"
             name="dailyAssistance"
@@ -214,9 +262,9 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label>Employment Status:</label>
-          <br></br>
           <input
             type="text"
             name="employmentStatus"
@@ -225,9 +273,9 @@ const Disability = () => {
             required
           />
         </div>
+        <br />
         <div className="formdetails">
           <label>Annual Income:</label>
-          <br></br>
           <input
             type="number"
             name="annualIncome"
@@ -235,10 +283,11 @@ const Disability = () => {
             onChange={handleChange}
             required
           />
-        </div >
+        </div>
+        <br />
         <div className="formdetails">
           <label>Support Needed:</label>
-          <br></br>
+
           <input
             type="text"
             name="supportNeeded"
@@ -247,9 +296,10 @@ const Disability = () => {
             required
           />
         </div>
-        <div className="formdetails"> 
+        <br />
+        <div className="formdetails">
           <label>Bank Details:</label>
-          <br></br>
+
           <input
             type="text"
             name="bankDetails"
@@ -258,7 +308,7 @@ const Disability = () => {
             required
           />
         </div>
-        <br/>
+        <br />
         <div className="button">
           <button type="submit">Submit</button>
         </div>

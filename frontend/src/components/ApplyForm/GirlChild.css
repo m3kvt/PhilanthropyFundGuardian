@@ -5,7 +5,7 @@
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 80px;
     
   }
   
@@ -36,6 +36,8 @@
     margin-right: 70px;
     width: 50%;
     color:#0a231e;
+    height: 550px; /* set a fixed height */
+    overflow-y: auto;
   }
   
   #girlchild  .image {
@@ -54,13 +56,14 @@
     font-weight: 900;
   }
   #girlchild .form{
-    background-color: rgb(255, 255, 255);
+    background-color: #aecfc7;
     padding:20px;
     width: 50%;
     box-shadow: 0px 0px 4px #000000;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     opacity: 1;
+    color:#11443a;
 }
 #girlchild .formdetails{
     display: flex;
@@ -76,14 +79,20 @@
     align-items: center;
     justify-content: center;
 }
-#girlchild .button{
+#girlchild button{
     color: #fff;
     background: #00715d;
-    border-radius: 40px;
-    width: 80px;
+    border-radius: 100px;
+    width: 100px;
     height: 30px;
     cursor: pointer;
+    border:1px solid #000;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+ &:hover {
+  background-color: #05261b; /* Darker green for button hover */
+} 
   }
+
   @media screen and (max-width:768px){
     #girlchild .details {
       width: 60%;

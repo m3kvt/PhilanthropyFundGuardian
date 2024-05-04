@@ -50,7 +50,9 @@ const Home = () => {
         <div className="content-container">
           <div className="text-container">
             <h1>GIVE A HAND</h1>
-            <p>This is some text on top of the background image.</p>
+            <p>"Alone, we can do so little; together, we can do so much." 
+                  </p>
+                  <h2> - Helen Keller </h2>
           </div>
           <div className="button-container">
             <Link to="/donate" className="donate-button">

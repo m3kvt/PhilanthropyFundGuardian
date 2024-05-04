@@ -31,8 +31,8 @@ const AdminLogin = () => {
         alert("Invalid Email or Password");
       }
     } catch (error) {
+      alert("Invalid ceredentials")
       console.error("Registration error:", error);
-      console.log("data error:",response.data)
     }
   };
   const handleSubmit = (e) => {

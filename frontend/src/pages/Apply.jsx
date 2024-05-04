@@ -15,19 +15,17 @@ const Apply = () => {
       <div className="apply-container">
         <div className="apply-box">
           <img src={image1} alt="Image 1" />
-          <p>Some text describing Box 1</p>
+          <h2>Girl Child Education</h2>
+          <p> We believe that every girl deserves access to quality education. </p>
           <Link to={`/apply/1`} className="apply-btn">Apply</Link>
         </div>
         <div className="apply-box">
           <img src={image2} alt="Image 2" height="150px" />
-          <p>Some text describing Box 2</p>
+          <h2>Disability Support</h2>
+          <p>We are committed to empowering individuals with disabilities to lead fulfilling and independent lives.</p>
           <Link to={`/apply/2`} className="apply-btn">Apply</Link>
         </div>
-        <div className="apply-box">
-          <img src={image3} alt="Image 3" className="image3" height="150px" />
-          <p>Some text describing Box 3</p>
-          <Link to={`/apply/3`} className="apply-btn">Apply</Link>
-        </div>
+        
       </div>
     </div>
   );
