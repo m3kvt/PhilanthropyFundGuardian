@@ -42,15 +42,7 @@ const DonorList = () => {
     fetchDonors();
   }, [causeId.causeId]);
 
-  // const [expanded, setExpanded] = useState(null);
-
-  // const toggleExpanded = (id) => {
-  //   if (expanded === id) {
-  //     setExpanded(null);
-  //   } else {
-  //     setExpanded(id);
-  //   }
-  // };
+ 
 
   return (
     <div id="donorlist" classname="donorlist">
