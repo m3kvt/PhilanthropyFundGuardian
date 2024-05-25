@@ -34,7 +34,7 @@ const GirlChildDocuments = () => {
       formData.append("incomeCertificate", incomeCertificate);
   
       const response = await axios.post(
-        `http://localhost:3001/api/uploadgirl/${applicationId}`,
+        `https://philanthropyfundguardian.onrender.com/api/uploadgirl/${applicationId}`,
         formData,
         {
           headers: {

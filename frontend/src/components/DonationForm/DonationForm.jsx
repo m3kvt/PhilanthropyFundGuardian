@@ -147,7 +147,7 @@ const DonationForm = () => {
     const amount = formData.get("amount");
     
     // Make a POST request to the /donate/:causeId endpoint
-    fetch(`http://localhost:3001/donate/${causeId}`, {
+    fetch(`https://philanthropyfundguardian.onrender.com/donate/${causeId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

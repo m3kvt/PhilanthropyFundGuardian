@@ -13,7 +13,7 @@ const CauseAmount = () => {
   useEffect(() => {
     const fetchSum = async (causeId) => {
       try {
-        const response = await axios.get(`http://localhost:3001/api/sum-amount/${causeId}`);
+        const response = await axios.get(`https://philanthropyfundguardian.onrender.com/api/sum-amount/${causeId}`);
         switch (causeId) {
           case 1:
             setSum1(response.data.sum);

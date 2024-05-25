@@ -20,7 +20,7 @@ const Login = () => {
     alert("Successfully registered");
     try {
       const response = await axios.post(
-        "http://localhost:3001/register",
+        "https://philanthropyfundguardian.onrender.com/register",
         formValues
       );
       const userId = response.data;
@@ -40,7 +40,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/login",
+        "https://philanthropyfundguardian.onrender.com/login",
         formValues
       );
       console.log("userId: ", response.data);

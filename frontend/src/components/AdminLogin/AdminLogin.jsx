@@ -16,7 +16,7 @@ const AdminLogin = () => {
     try {
       console.log("login:");
       const response = await axios.post(
-        "http://localhost:3001/loginadmin",
+        "https://philanthropyfundguardian.onrender.com/loginadmin",
         loginValues
       );
       console.log("done")

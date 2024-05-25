@@ -27,7 +27,7 @@ const navigate=useNavigate();
 
   const fetchWaitingListData = async (url) => {
     try {
-      const response = await axios.get(`http://localhost:3001/api${url}`);
+      const response = await axios.get(`https://philanthropyfundguardian.onrender.com/api${url}`);
       console.log("response", response.data.data);
       setWaitingListData(response.data.data);
       if (response.data.data.length===0){
@@ -54,7 +54,7 @@ const navigate=useNavigate();
     
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/acceptgirlchild/${applicationId}`
+        `https://philanthropyfundguardian.onrender.com/api/acceptgirlchild/${applicationId}`
       );
       console.log("response message:",response.data.message); // Log the response message from the backend
 
@@ -73,7 +73,7 @@ const navigate=useNavigate();
     console.log("applicationId:", applicationId);
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/acceptdisability/${applicationId}`
+        `https://philanthropyfundguardian.onrender.com/api/acceptdisability/${applicationId}`
       );
       console.log("response message:",response.data.message); // Log the response message from the backend
 

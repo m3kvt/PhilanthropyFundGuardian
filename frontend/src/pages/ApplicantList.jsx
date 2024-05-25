@@ -33,7 +33,7 @@ const ApplicantList = () => {
       try {
         if (selectedCause === 1) {
           const response = await axios.get(
-            "http://localhost:3001/api/girl-child-applicants"
+            "https://philanthropyfundguardian.onrender.com/api/girl-child-applicants"
           );
           console.log("response girl:", response.data.data);
           if (response.data.data.length===0){
@@ -43,7 +43,7 @@ const ApplicantList = () => {
         }
         if (selectedCause === 2) {
           const response = await axios.get(
-            "http://localhost:3001/api/disability-applicants"
+            "https://philanthropyfundguardian.onrender.com/api/disability-applicants"
           );
           console.log("response disability:", response.data.data);
           if (response.data.data.length===0){
@@ -62,7 +62,7 @@ const ApplicantList = () => {
     console.log("applicationId:", applicationId);
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/acceptgirlchild/${applicationId}`
+        `https://philanthropyfundguardian.onrender.com/api/acceptgirlchild/${applicationId}`
       );
       console.log(response.data.message); // Log the response message from the backend
 
@@ -81,7 +81,7 @@ const ApplicantList = () => {
     console.log("applicationId:", applicationId);
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/acceptdisability/${applicationId}`
+        `https://philanthropyfundguardian.onrender.com/api/acceptdisability/${applicationId}`
       );
       console.log(response.data.message); // Log the response message from the backend
 
@@ -100,7 +100,7 @@ const ApplicantList = () => {
     console.log("applicationId:", applicationId);
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/reject/${applicationId}`
+        `https://philanthropyfundguardian.onrender.com/api/reject/${applicationId}`
       );
       console.log(response.data.message); // Log the response message from the backend
 
@@ -441,13 +441,13 @@ export default ApplicantList;
 //       try {
 //         if (selectedCause === 1) {
 //           const response = await axios.get(
-//             `http://localhost:3001/api/girl-child-applicants`
+//             `https://philanthropyfundguardian.onrender.com/api/girl-child-applicants`
 //           );
 //           console.log("response girl:", response.data.data);
 //           setApplicants(response.data.data);
 //         } else if (selectedCause === 2) {
 //           const response = await axios.get(
-//             `http://localhost:3001/api/disability-applicants`
+//             `https://philanthropyfundguardian.onrender.com/api/disability-applicants`
 //           );
 //           console.log("response disability:", response.data.data);
 //           setApplicants(response.data.data);
@@ -464,7 +464,7 @@ export default ApplicantList;
 //     console.log("applicationId:", applicationId);
 //     try {
 //       const response = await axios.post(
-//         `http://localhost:3001/api/acceptgirlchild/${applicationId}`
+//         `https://philanthropyfundguardian.onrender.com/api/acceptgirlchild/${applicationId}`
 //       );
 //       console.log(response.data.message); // Log the response message from the backend
 
@@ -482,7 +482,7 @@ export default ApplicantList;
 //     console.log("applicationId:", applicationId);
 //     try {
 //       const response = await axios.post(
-//         `http://localhost:3001/api/acceptdisability/${applicationId}`
+//         `https://philanthropyfundguardian.onrender.com/api/acceptdisability/${applicationId}`
 //       );
 //       console.log(response.data.message); // Log the response message from the backend
 
@@ -500,7 +500,7 @@ export default ApplicantList;
 //     console.log("applicationId:", applicationId);
 //     try {
 //       const response = await axios.post(
-//         `http://localhost:3001/api/reject/${applicationId}`
+//         `https://philanthropyfundguardian.onrender.com/api/reject/${applicationId}`
 //       );
 //       console.log(response.data.message); // Log the response message from the backend
 

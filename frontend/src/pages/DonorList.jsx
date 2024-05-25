@@ -31,7 +31,7 @@ const DonorList = () => {
     const fetchDonors = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/display/${causeId.causeId}`
+          `https://philanthropyfundguardian.onrender.com/display/${causeId.causeId}`
         );
         setDonors(response.data);
         console.log("data:", response.data);
